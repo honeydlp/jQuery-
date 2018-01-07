@@ -1,5 +1,7 @@
 /**
  * step1通过自执行函数创建命名空间
+ * step2共享原型
+ * step3内部extend管理代码
  */
 (function(global){
     var jQuery = function (){ //构造函数
