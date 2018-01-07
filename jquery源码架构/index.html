@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery源码架构解析</title>
+    <script src="jQuery.js"></script>
+</head>
+<body>
+    <script>
+        $.ajax();
+        $().css();
+
+        // 插件 jquery本身扩展
+        $.extend({
+            getname:function(name){
+                console.log(name);
+            }
+        })
+
+        // 实例插件
+        $.fn.extend({
+            getname:function(name){
+                console.log(name);
+            } 
+        })
+        //或者直接扩展
+        $.fn.getname = function(name){
+                console.log(name);
+        } 
+    </script>
+</body>
+</html>
