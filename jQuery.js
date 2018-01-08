@@ -5,7 +5,7 @@
  */
 (function(global){
     var jQuery = function (){ //构造函数
-        return new jQuery.prototype.init(); //平时直接类似函数调用jquery，其库里已经实力化过。
+        return new jQuery.fn.init(); //平时直接类似函数调用jquery，其库里已经实力化过。
     }
 
     //jQuery实例上的方法定义在此
